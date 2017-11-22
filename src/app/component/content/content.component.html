@@ -1,0 +1,15 @@
+<div [ngStyle] = "{'padding': '0px 10px 0px 10px'}">
+<h1>{{ tituloPagina }}</h1>
+
+<div class="card-deck wrapper-navbar" [ngStyle] = "{'margin-top': '40px'}">
+<div *ngFor="let tarjeta of tarjetas" class="card"> <!--  style="width: 20rem;"   -->
+    <img class="card-img-top" [src]="tarjeta.imagen" alt="Mi Imagen" > <!-- style="width: 250px; height: 300px;" -->
+    <div class="card-body">
+      <h4 class="card-title">{{ tarjeta.titulo }}</h4>
+      <p class="card-text">{{ tarjeta.descripcion }}</p>
+      <p class="card-text"><small class="text-muted">{{ tarjeta.actualizacion }}</small></p>
+    </div>
+</div>
+
+</div>
+</div>
